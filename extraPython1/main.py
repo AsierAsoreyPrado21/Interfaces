@@ -87,7 +87,12 @@ def generar_n_caracteres(a,b):
 print(generar_n_caracteres(15,"a"))
 #Ejercicio10
 def procedimiento (histo):
-    for i in histo:
-        print("*")
+    r="*"
+    z=""
+    i=0
+    for i in range(len(histo)):
+        z=z+r
+        i+=1
+    return z
 
-print(procedimiento(histo="casa"))
+print(procedimiento("casa"))
