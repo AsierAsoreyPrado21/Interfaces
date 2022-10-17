@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Call of Duty",
+    "description": "Call of Duty es una serie de videojuegos shooter en primera persona desarrolado por Treyark",
+    "image_url": "https://raw.githubusercontent.com/AsierAsoreyPrado21/Interfaces/main/API-REST/cod.jpg",
+  },
+  {
+    "name": "God of War",
+    "description": "god of War es un videojuego hack and slash creado por SCE Santa Monica",
+    "image_url": "https://raw.githubusercontent.com/AsierAsoreyPrado21/Interfaces/main/API-REST/gow.jpg",
+  },
+  {
+    "name": "Mafia III",
+    "description": "Mafia III es un videojuego de acción y aventura de mundo abierto desarrollado por Hangar 13",
+    "image_url": "https://raw.githubusercontent.com/AsierAsoreyPrado21/Interfaces/main/API-REST/mafia.jpg",
+  },
+  {
+    "name": "Mario Kart",
+    "description": "Mario Kart es una serie de videojuegos de carreras desarrollados por Nintendo",
+    "image_url": "https://raw.githubusercontent.com/AsierAsoreyPrado21/Interfaces/main/API-REST/mariokart.jpeg",
+  },
+  {
+    "name": "Minecraft",
+    "description": "es un videojuego de construcción de tipo mundo abierto desarrollado por Mojang Studios",
+    "image_url": "https://raw.githubusercontent.com/AsierAsoreyPrado21/Interfaces/main/API-REST/minecraft.jpg",
+  }
+]
