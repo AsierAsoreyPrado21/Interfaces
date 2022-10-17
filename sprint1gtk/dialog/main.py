@@ -4,4 +4,4 @@ from gi.repository import Gtk
 from window import MainWindow
 win=MainWindow()
 win.show_all()
-Gtk.main()
+Gtk.main() 

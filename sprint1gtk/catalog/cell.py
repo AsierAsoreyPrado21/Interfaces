@@ -4,21 +4,24 @@ from gi.repository import Gtk
 from detail_window import Detail
 from gi.repository import GdkPixbuf
 
-class Cell(Gtk.EventBox):
+# Esta clase serán celdas una FlowBox
+class Cell(Gtk.EventBox):  # Herencia de EventBox
     name = None
     image = Gtk.Image()
     descripcion = None
 
+    # Hacemos que cell reciba los parámetros nombre e imagen
     def __init__(self, name, image):
         super().__init__()
         self.name = name
         self.image = image
-        box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
+        box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4) # Generamos una box vertical
         box.pack_start(Gtk.Label(label=name), False, False, 0)
         box.pack_start(image, True, True, 0)
         self.add(box)
         self.connect("button-release-event", self.on_click)
 
+    # Función on_click que  lama mediante click en las imagenes
     def on_click(self, widget, event):
         self.image = self.getImage()
         self.asignar_desripcion()
@@ -26,6 +29,7 @@ class Cell(Gtk.EventBox):
         win.show_all()
         Gtk.main()
 
+    # Función que asigna un String en función del nombre de la imagen
     def asignar_desripcion(self):
         if self.name == "Call of Duty":
             self.descripcion = "Call od Duty Modern Warfare"
@@ -37,7 +41,7 @@ class Cell(Gtk.EventBox):
             self.descripcion = "Mario Kart 8"
         elif self.name == "Minecraft":
             self.descripcion="Minecraft"
-    def getImage(self):
+    def getImage(self): # Función que devuelve la imagen en función del nombre de la imagen
         img = Gtk.Image()
         pixbuf = None
         if self.name == "Call of Duty":
