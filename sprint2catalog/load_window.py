@@ -14,12 +14,14 @@ class LoadWindow(Gtk.Window):
         super().__init__(title="")
         self.connect("destroy", Gtk.main_quit)
         self.set_border_width(60)
+        self.set_position(Gtk.WindowPosition.CENTER) #Posiciona en el medio la segunda ventana al hacer clik
         self.set_resizable(False)
         self.spinner.props.active = True
 
         self.box.pack_start(self.label, False, False, 0)
         self.box.pack_start(self.spinner, False, False, 0)
         self.add(self.box)
+
 
         self.launch_load()
 

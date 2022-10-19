@@ -14,6 +14,7 @@ class MainWindow(Gtk.Window): #Herencia de Window
         self.connect("destroy", Gtk.main_quit)
         self.set_border_width(15)
         self.set_default_size(400, 400)
+        self.set_position(Gtk.WindowPosition.CENTER) #Posiciona en el medio la segunda ventana al hacer clik
 
         header = Gtk.HeaderBar(title="Imagenes")
         header.set_subtitle("Colección")
