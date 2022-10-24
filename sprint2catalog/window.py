@@ -12,9 +12,10 @@ class MainWindow(Gtk.Window): #Herencia de Window
     def __init__(self, data_source):
         super().__init__(title="Catalogo")
         self.connect("destroy", Gtk.main_quit)
+        self.set_position(Gtk.WindowPosition.CENTER) #Posiciona en el medio la segunda ventana al hacer clik
         self.set_border_width(15)
         self.set_default_size(400, 400)
-        self.set_position(Gtk.WindowPosition.CENTER) #Posiciona en el medio la segunda ventana al hacer clik
+
 
         header = Gtk.HeaderBar(title="Imagenes")
         header.set_subtitle("Colección")
@@ -24,9 +25,34 @@ class MainWindow(Gtk.Window): #Herencia de Window
 
         scrolled = Gtk.ScrolledWindow()
         scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
-        scrolled.add(self.flowbox)
-        self.add(scrolled) # Añadimos a la ventana la ScrolledWindow que ya contiene la FlowBox dentro
+        scrolled.add(self.flowbox)  # Añadimos a la ScrolledWindow nuestra FlowBox
 
-        for item in data_source:
+        #Creamos un menú que contendra un elemento que desplegará un mensaje
+        mb = Gtk.MenuBar() #Elemento GTK menu Bar
+
+        filemenu = Gtk.Menu() #Elemento GTK menu con sus items
+        fileM = Gtk.MenuItem("Ayuda")
+        fileM.set_submenu(filemenu)
+
+        acercaDe = Gtk.MenuItem("Acerca De") #Otro menu Item
+        acercaDe.connect("activate", self.click)
+        filemenu.append(acercaDe)
+        mb.append(fileM)
+
+        vbox = Gtk.VBox(False, 2) #Creamos una box que tendra el menu Bar y la ventana con scroll
+        vbox.pack_start(mb, False, False, 0)
+        vbox.pack_start(scrolled, True, True, 0)
+        self.add(vbox)
+
+        for item in data_source: #Clase que recibe el data source y que genera ventanas
             cell = Cell(item.get("name"), item.get("gtk_image"), item.get("description"))
             self.flowbox.add(cell)
+    #Funcion que contendra el mensaje
+    def click(self, event): #Funcion que se activa con el click en "Ayuda" y "Acerca de" que genera un alabel con texto
+        win = Gtk.Window(title="acerca del desarrollador")
+        box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+        label = Gtk.Label("La pestaña Desarrollador es el lugar al que puede ir cuando quiera hacer o usar comandos")
+        box.pack_start(label, True, True, 0)
+        win.add(box)
+        win.show_all()
+        Gtk.main()
