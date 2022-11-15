@@ -2,16 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
-            android:id="@+id/home"
-            android:title="Ventana">
-        </item>
-        <item
             android:id="@+id/catalog"
-            android:title="Catálogo">
+            android:title="Catalog Activity">
         </item>
         <item
             android:id="@+id/about"
-            android:title="Sobre el desarrollador">
+            android:title="About">
         </item>
     </group>
 </menu>
