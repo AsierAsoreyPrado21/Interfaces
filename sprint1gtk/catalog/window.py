@@ -50,7 +50,7 @@ class MainWindow(Gtk.Window): #Herencia de Window
         cell_three = Cell("Mafia 3", image3)
         cell_four = Cell("Mario Kart", image4)
         cell_five = Cell("Minecraft", image5)
-        
+
         # Añadimos todas nuestras celdas a la FlowBox
         self.flowbox.add(cell_one)
         self.flowbox.add(cell_two)
