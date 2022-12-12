@@ -35,7 +35,6 @@
             android:layout_height="fill_parent"
             android:text="AC"
             android:layout_margin="5dp"
-            android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold"
             android:onClick="ButtonClick"
