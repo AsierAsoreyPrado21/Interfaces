@@ -17,7 +17,7 @@
         android:layout_gravity="center|right"
         android:textColor="#0000ff"
         android:textStyle="bold"
-        android:textSize="30sp"
+        android:textSize="30dp"
         android:background="#64E1AA"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="30dp"
@@ -27,7 +27,49 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/ac"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="AC"
+            android:layout_margin="5dp"
+            android:textColor="FF0000"
+            android:textSize="30sp"
+            android:background="@drawable/keyboard_btn"
         />
+        <Button
+            android:id="@+id/power"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="^"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:background="@drawable/keyboard_btn"
+            />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="-"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:background="@drawable/keyboard_btn"
+            />
+        <Button
+            android:id="@+id/div"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="/"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:background="@drawable/keyboard_btn"
+            />
+
 
     </LinearLayout>
 </LinearLayout>
