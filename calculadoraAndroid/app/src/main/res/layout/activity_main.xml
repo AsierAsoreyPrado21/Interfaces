@@ -28,7 +28,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:weightSum="4">
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ac"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -40,7 +40,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
         />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/power"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -52,7 +52,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/back"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -64,7 +64,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/div"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -84,7 +84,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:weightSum="4">
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seven"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -96,7 +96,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/eight"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -108,7 +108,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/nine"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -120,7 +120,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/mul"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -140,7 +140,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:weightSum="4">
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/four"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -152,7 +152,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/five"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -164,7 +164,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/six"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -176,7 +176,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/min"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -196,7 +196,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:weightSum="4">
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/one"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -208,7 +208,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/two"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -220,7 +220,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/three"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -232,7 +232,7 @@
             android:onClick="ButtonClick"
             android:background="@drawable/keyboard_btn"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/plus"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -250,7 +250,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:weightSum="4">
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/zero"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -262,7 +262,7 @@
                 android:onClick="ButtonClick"
                 android:background="@drawable/keyboard_btn"
                 />
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/point"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -274,7 +274,7 @@
                 android:onClick="ButtonClick"
                 android:background="@drawable/keyboard_btn"
                 />
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ans"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -286,7 +286,7 @@
                 android:onClick="ButtonClick"
                 android:background="@drawable/keyboard_btn"
                 />
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/equals"
                 android:layout_width="0dp"
                 android:layout_weight="1"
